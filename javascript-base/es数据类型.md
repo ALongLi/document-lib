@@ -109,8 +109,6 @@ notebook: js
     String(undefined)    //"undefined"
     String({name:1})    //"[object Object]"
   ```
-
-   ![alt](https://user-gold-cdn.xitu.io/2018/12/26/167eaca770f324c9?w=1080&h=1920&f=jpeg&s=227258)
     
         
 
