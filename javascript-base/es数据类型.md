@@ -109,6 +109,8 @@ notebook: js
     String(undefined)    //"undefined"
     String({name:1})    //"[object Object]"
   ```
+
+  ![alt](https://github.com/ALongLi/document-lib/blob/master/img/1.jpg)
     
         
 
