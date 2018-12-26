@@ -44,17 +44,17 @@ notebook: js
   - undefined，返回NaN
   - 字符串会遵循以下规则
       - 只包含数字例如"123"会转换为123
-      - 如果字符串包含有效小数点"52.1.1",会转换为52.1第二个小数点后面的不要
+      - 如果字符串包含有效小数点"11.1.1",会转换为11.1第二个小数点后面的不要
       -  如果字符串是空的""，会转换为0
       -  如果字符串开头不是数字，转换为NaN
   - 如果是对象，很少用到，以后再说
 下面是例子
 ```javascript
   Number("陈俊先")  //NaN
-  Number("521")  //521
-  Number("521陈俊先")   //521
-  Number("52.1")    //52.1
-  Number("52.1陈俊先")  //52.1
+  Number("111")  //111
+  Number("111陈俊先")   //111
+  Number("11.1")    //11.1
+  Number("11.1陈俊先")  //11.1
   Number(true)  //1
   Number(false) //0
   Number(null)  //0
@@ -67,10 +67,10 @@ notebook: js
 
 ```javascript
   parseInt("陈俊先")  //NaN
-  parseInt("521")   //521
-  parseInt("521陈俊先")     //521
-  parseInt("52.1")  //52
-  parseInt("52.1陈俊先")    //52
+  parseInt("111")   //111
+  parseInt("111陈俊先")     //111
+  parseInt("11.1")  //11
+  parseInt("11.1陈俊先")    //11
   parseInt(true)    //NaN
   parseInt(false)   //NaN
   parseInt(null)     //NaN
@@ -81,10 +81,10 @@ notebook: js
    - 与parseInt()几乎一致，只是parseFloat遇到第一个小数点依然会继续往后转换
 ```javascript
   parseFloat("陈俊先") //NaN
-  parseFloat("521")   //521
-  parseFloat("521陈俊先")  //521
-  parseFloat("52.1")   //52.1
-  parseFloat("52.1陈俊先")    //52.1
+  parseFloat("111")   //111
+  parseFloat("111陈俊先")  //111
+  parseFloat("11.1")   //11.1
+  parseFloat("11.1陈俊先")    //11.1
   parseFloat(true)    //NaN
   parseFloat(false)   //NaN
   parseFloat(null)    //NaN
